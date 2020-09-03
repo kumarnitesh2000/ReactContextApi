@@ -1,13 +1,23 @@
-import React,{useEffect,useState} from 'react';
+import React from 'react';
 import './App.css';
+import {ContextProvider} from './Context';
+import Nav from './Nav';
+import Name from './Name';
+import AddNames from './AddNames';
 
 const App = () =>{
 
 
 return(
-<div>
-   changes to master
-</div>
+<ContextProvider>
+      <div className="App">
+         <Nav />
+
+         <Name />
+
+         <AddNames />
+      </div>
+</ContextProvider>
 
 );
 
